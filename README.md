@@ -96,39 +96,72 @@ Step14. click on debug and simulate using simulation as shown below
   
 
 ## STM 32 CUBE PROGRAM :
+```
+#include "main.h"
+int main(void)
+{
+  HAL_Init();
+  SystemClock_Config();
+  MX_GPIO_Init();
+  MX_TIM2_Init();
+ HAL_TIM_Base_Start(&htim2);
+ HAL_TIM_PWM_Init(&htim2);
+ HAL_TIM_PWM_Start(&htim2,TIM_CHANNEL_1);
+  while (1)
+  {
+    
+}
+
+```
 
 
 
 
 
 ## Output screen shots of proteus  :
+
+![image](https://github.com/shoaib3136/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/117919362/f90cad80-dcab-4f7a-82fe-ea960cd3fbbd)
+
  
  
  ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
+ ![image](https://github.com/shoaib3136/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/117919362/3815b8c9-3300-413f-82c4-25c261cdde22)
+
+## Screen shots of oscilloscope:
+![image](https://github.com/shoaib3136/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/117919362/d943bf92-8588-49a9-a20b-2a9cf261caaa)
+
+![image](https://github.com/shoaib3136/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/117919362/34633b7e-8c44-47f5-b9ca-795f2e4767fc)
+
+
+![image](https://github.com/shoaib3136/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/117919362/5553ba51-e523-451a-9451-5fcbffa34efe)
+
+
+
+
  
 
-## DUTY CYCLE AND FREQUENCY CALCULATION 
+## DUTY CYCLE AND FREQUENCY CALCULATION :
 FOR PULSE AT 500
 
-TON = 
-TOFF=
-TOTAL TIME = 
-FREQUENCY = 1/(TOTAL TIME)
+TON = 2.1
+TOFF=2.1
+TOTAL TIME = 4.2
+Duty% = (1/4.2)*100=23%
 
 FOR PULSE AT 700
 
-TON = 
-TOFF=
-TOTAL TIME = 
-FREQUENCY = 1/(TOTAL TIME)
+TON = 1.7
+TOFF= 1.5
+TOTAL TIME = 3.2
+Duty% = (1/3.2)*100=31%
 
 
 FOR PULSE AT 900
 
-TON = 
-TOFF=
-TOTAL TIME = 
-FREQUENCY = 1/(TOTAL TIME)
+TON = 2.2
+TOFF= 2.4
+TOTAL TIME = 4.6
+Duty% = (1/4.6)*100=21%
 
 
 ## Result :
