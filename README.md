@@ -146,14 +146,14 @@ FOR PULSE AT 500
 TON = 2.1
 TOFF=2.1
 TOTAL TIME = 4.2
-Duty% = (1/4.2)*100=23%
+Duty% = (2.1/4.2)*100=50%
 
 FOR PULSE AT 700
 
 TON = 1.7
 TOFF= 1.5
 TOTAL TIME = 3.2
-Duty% = (1/3.2)*100=31%
+Duty% = (1.7/3.2)*100=53%
 
 
 FOR PULSE AT 900
@@ -161,7 +161,7 @@ FOR PULSE AT 900
 TON = 2.2
 TOFF= 2.4
 TOTAL TIME = 4.6
-Duty% = (1/4.6)*100=21%
+Duty% = (2.2/4.6)*100=47%
 
 
 ## Result :
